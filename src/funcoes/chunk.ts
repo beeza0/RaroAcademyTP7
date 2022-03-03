@@ -12,5 +12,16 @@
  * @returns 
  */
 export const chunk = (valores: number[], tamanho: number): number[][] => {
-  return null;
+  let aux = 0;
+  let auxArray = [];
+  const returnArray = [];
+  valores.forEach((valor, index) => {
+    ++aux;
+    auxArray.push(valor);
+    if(aux%tamanho === 0 || valores[index] === valores[valores.length-1]) {
+      returnArray.push(auxArray);
+      auxArray = [];
+    };  
+  });
+  return returnArray;
 };
