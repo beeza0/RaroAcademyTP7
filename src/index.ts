@@ -15,7 +15,7 @@ function testChunk() {
 
   // o array original não pode ser alterado.
   const naoAlterados = original.every((item, index) => item === items[index]);
-
+  
   // verificação do método.
   console.assert(naoAlterados, 'O array original não pode ser alterado');
   console.assert(chunked.length === 4, 'array deve ter 4 grupos');
@@ -111,7 +111,7 @@ async function testFila() {
 }
 
 testChunk();
-// testCompact();
-// testFromPairs();
-// testUniq();
+testCompact();
+testFromPairs();
+testUniq();
 // testFila();
