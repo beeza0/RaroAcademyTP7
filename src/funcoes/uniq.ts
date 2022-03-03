@@ -7,6 +7,10 @@
  * 
  * @returns somente os itens definidos.
  */
-export const uniq = <T>(args: T[]): T[] => {
-  return null;
+export const uniq = <T>(args: T[]): T[] => {  
+  const newArray = [];
+  args.forEach((arg) => {
+    if (!newArray.includes(arg)) newArray.push(arg) 
+  })
+  return newArray
 };
