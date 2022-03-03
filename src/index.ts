@@ -111,8 +111,8 @@ async function testFila() {
   }
 }
 
-testChunk();
-// testCompact();
+// testChunk();
+testCompact();
 // testFromPairs();
 // testUniq();
 // testFila();
