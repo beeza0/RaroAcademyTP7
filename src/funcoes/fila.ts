@@ -1,4 +1,3 @@
-import { rejects } from 'assert';
 import { writeFile, readFile } from 'fs';
 import { resolve } from 'path';
 
